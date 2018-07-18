@@ -17,10 +17,10 @@ class HotKeyTest(unittest.TestCase):
 		r = requests.get(self.base_url,params = {'userId':'','machineCode':''})
 		self.result = r.json()
 		hotkey = self.result['hotTitle']
-		print(hotkey)
+		#print(hotkey)
 		hot = ['废钢','钢坯','唐山','钢铁','沙钢','唐山钢市快报','铁矿石','煤焦','库存']
 		for i in range(len(hotkey)):
-			self.assertEqual(hotkey[i]['title'],hot[i])
+			self.assertIn(hotkey[i]['title'],hot)
 
 if __name__ == '__main__':
 	unittest.main()

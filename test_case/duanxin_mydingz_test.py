@@ -51,7 +51,7 @@ class DuanxinMysmsTest(unittest.TestCase):
 				dingzhi.append(dx['name'])
 			#print (dingzhi)
 			#========================将输出结果放入本地TXT文件中========================
-			f = open (r'C:\Users\admin\Desktop\steelphone_api_test\test_case\html.txt','w')
+			f = open (r'D:/git/steelphone_api_test/test_case/html.txt','w')
 			print (dingzhi,file = f)
 			f.close()
 

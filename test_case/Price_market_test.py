@@ -94,7 +94,7 @@ class MaketTest(unittest.TestCase):
 		self.assertIn(self.result['breedName'],self.result['tableName'])    #断言品种名称字段包含于当前行情表单名称中
 		self.assertEqual(self.result['breedId'],'01020101')      #断言查询的品种id与传入的品种id一致
 		self.assertEqual(self.result['cityId'],'01030110')		 #断言查询的城市id与传入的城市id一致
-		if self.result['toastMsg'] == []:
+		if self.result['toastMsg'] == '':
 			self.assertEqual(self.result['toastMsg'],'')             #toastMsg为空表示当前行情不为空，否则“对不起，没有相应行情表单，可切换其他品种或城市”
 		else:
 			self.assertEqual(self.result['toastMsg'],'今日行情尚未发布，您可以查看其他行情')
