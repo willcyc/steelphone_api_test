@@ -47,7 +47,8 @@ class DuanxinNewSmsTest(unittest.TestCase):
 		#print(zuixin)
 
 		#====================读取短信-我的定制页面中定制的短信====================
-		f = open('C:/Users/admin/Desktop/steelphone_api_test/test_case/html.txt')
+		#f = open('C:/Users/admin/Desktop/steelphone_api_test/test_case/html.txt')
+		f = open('D:/git/steelphone_api_test/test_case/html.txt')
 		jieguo = f.read()
 		#print(jieguo)
 
