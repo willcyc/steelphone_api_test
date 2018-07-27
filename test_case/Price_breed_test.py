@@ -15,11 +15,11 @@ class BreedTest(unittest.TestCase):
 
 	@parameterized.expand([
 		#用例名称，参数：userId、machineCode，实际结果，预期结果
-		("both_null",'','','breeds',10),
-		("userId_null",'','2ACCCCDC5FBDBE59ADD70F1C100FE4BB','breeds',10),
-		("machineCode_null",'566453','','breeds',10),
-		("machineCode__error",'566453','4546165132','breeds',10),
-		("both_right",'566453','2ACCCCDC5FBDBE59ADD70F1C100FE4BB','breeds',10)
+		("both_null",'','','breeds',9),
+		("userId_null",'','2ACCCCDC5FBDBE59ADD70F1C100FE4BB','breeds',9),
+		("machineCode_null",'566453','','breeds',9),
+		("machineCode__error",'566453','4546165132','breeds',9),
+		("both_right",'566453','2ACCCCDC5FBDBE59ADD70F1C100FE4BB','breeds',9)
 	])
 
 	def test_case(self,_,type,id,a,c):

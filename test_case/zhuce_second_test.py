@@ -14,7 +14,7 @@ class ZhuCe_Getcode_Test(unittest.TestCase):
 
 	def test_get_success(self):
 		'''参数均正确'''
-		payload = {'userId':'','machineCode':'90526B160362A7A4FECA22411080F8CF','validateCodeKey':'AOLjDa0EgEOzMKArSVpJnTYqf353-vVGba4Ht6EfxeAyk5LSEmjD8GiWCo3SDsao','protocolVersion':'4.3.0'}
+		payload = {'userId':'','machineCode':'90526B160362A7A4FECA22411080F8CF','validateCodeKey':'SGOBggiFjjcVb3ltmk-yOXy8z-O08Z-duaOfRjIImBWsT7l5tp4xE3ys16mDBMIG','protocolVersion':'4.3.0'}
 		r = requests.get(self.base_url,params = payload)											
 		self.result = r.json()									
 		print(self.result)
